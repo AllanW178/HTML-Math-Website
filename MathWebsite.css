@@ -1,0 +1,554 @@
+/* This the basic set up for the website page */
+/* By the way, since not every size can be adjusted with '%', I used 'vh' to replace some of the 'px'. */
+
+
+body {
+  font-family: 'Verdana', 'Arial', sans-serif;
+  background: linear-gradient(to right, #d7e1ec, #f2f6fc);
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+
+  
+}
+
+/* main subtitle for the main content */
+.main-title-1 {
+  font-size: 200%;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* main text for the main content */
+.content-text {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* video customization */
+.video-1 {
+  border-radius: 5%;
+  border-width: 0.5vh;
+  border-color: rgba(207, 224, 236);
+  display: block;
+
+}
+
+
+/* Flexbox layout: sidebar + main content */
+.container {
+  display: flex;
+  min-height: 100vh; /* This is the full height of viewport by using 'vh' (since it's hard to find the right percentage for the size I want) */
+}
+
+
+
+/* Sidebar styles */
+
+.sidebar {
+  width: 20%; /* Instead of 280px */
+  background: #cfe0ec;
+  
+  padding: 1.7% 1%; /* Instead of 25px 15px */
+  border-right: 0.15% solid #a0bacc;
+  box-shadow: inset -0.1% 0 0.3% rgba(0,0,0,0.1); /* Subtle inner shadow */
+  
+}
+
+
+
+/* Centered logo with spacing below */
+.logo-container {
+  text-align: center;
+  margin-bottom: 2.5%;
+
+  
+}
+
+
+
+/* Main heading */
+.title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.4%;
+  color: #003566;
+
+  
+}
+
+/* Sub-heading under logo */
+.subtitle {
+  font-size: 0.9em;
+  color: #375f7b;
+  font-style: italic;
+  
+}
+
+/* Remove bullet points in nav */
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+  
+}
+
+
+/* Space between nav links */
+.sidebar li {
+  
+  margin: 1.5% 0;
+}
+
+
+
+/* Style individual nav links */
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  color: #37474f;
+  padding: 1% 1.5%;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+
+  
+}
+
+
+/* Hover effect for nav */
+.sidebar a:hover {
+  background-color: rgba(0, 53, 102, 0.1);
+  
+}
+
+
+/* Highlight section names */
+.sidebar strong {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 0.5%;
+  color: #002244;
+
+
+  
+}
+
+/* Descriptive span under nav label */
+.sidebar span {
+  display: block;
+  font-size: 0.9em;
+  color: #4a6b7d;
+  line-height: 1.4;
+  
+}
+
+/* Those are the highlighting for the current page's nav link */
+body.index .sidebar a[href="index.html"],
+body.about .sidebar a[href="about.html"],
+body.attend .sidebar a[href="attend.html"],
+body.community .sidebar a[href="community.html"] {
+
+  
+  background-color: rgba(0, 53, 102, 0.15);
+  box-shadow: inset 0.3% 0 0 #003566;
+  color: #003566;
+
+
+  
+}
+
+
+/* Main content section (info page) */
+.main-content {
+  flex: 1;
+  padding: 3%;
+  background: #ffffff;
+  border-left: 0.2% solid #dde7f0;
+  box-shadow: inset 0.1% 0 0.25% rgba(0,0,0,0.05);
+
+  
+}
+
+/* Styled main headings */
+.fancy-heading {
+  font-size: 1.4em;
+  color: #003566;
+  margin-bottom: 2%;
+  border-bottom: 0.1% solid #ccc;
+  padding-bottom: 0.8%;
+
+  
+}
+
+/* Fade effect on certain paragraphs */
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+  
+}
+
+
+
+
+
+/* Here is the 'About Page' adjustments: Level Selector */
+
+/* Wrapper for level selector radio buttons */
+
+.level-selector {
+  margin: 2% 0;
+  
+}
+
+/* Hide native radio input */
+.level-selector input[type="radio"] {
+  display: none;
+}
+
+
+
+/* Clickable label buttons */
+.level-selector label {
+  display: inline-block;
+  padding: 0.8% 1.5%;
+  background-color: #cfe0ec;
+  border: 0.1% solid #a0bacc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-right: 1%;
+
+
+
+  
+}
+
+/* Hover effect for level options */
+.level-selector label:hover {
+  background-color: #b0c4de;
+  
+}
+
+
+
+
+/* Selected level highlight */
+.level-selector input[type="radio"]:checked + label {
+  background-color: #003566;
+  color: white;
+
+  
+}
+
+/* Descriptions shown depending on level */
+.level-descriptions {
+  margin-top: 1.5%;
+  padding: 1.5%;
+  background-color: #f2f6fc;
+  border-radius: 4px;
+
+  
+}
+
+
+
+.description {
+  display: none;
+  
+}
+
+
+
+/* Show correct description for selected level */
+#beginner:checked ~ .level-descriptions [data-level="beginner"],
+#intermediate:checked ~ .level-descriptions [data-level="intermediate"],
+
+#advanced:checked ~ .level-descriptions [data-level="advanced"] {
+  display: block;
+  
+}
+
+
+
+/* Here is the 'Community Page': Posts & Form */
+/* Post form wrapper */
+
+
+.post-form {
+  margin: 2% 0;
+
+  
+}
+
+
+/* Styling the post textarea */
+.post-form textarea {
+  
+  width: 100%;
+  height: 12%;
+  padding: 1%;
+  border: 0.1% solid #a0bacc;
+  border-radius: 4px;
+  resize: vertical;
+  
+}
+
+
+
+/* Flex container for submit and character counter */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1%;
+}
+
+
+/* Submit button */
+.btn-primary {
+  padding: 0.8% 2%;
+  background-color: #003566;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* Hover effect for submit button */
+.btn-primary:hover {
+  background-color: #002244;
+  
+}
+
+
+
+/* Character counter text */
+.char-count {
+  color: #666;
+  font-size: 0.9em;
+  
+}
+
+/* Post area container */
+.posts-container {
+  margin-top: 3%;
+}
+
+/* Individual post styling */
+.post {
+  background-color: #f2f6fc;
+  padding: 1.5%;
+  border-radius: 4px;
+  margin-bottom: 1.5%;
+
+  
+}
+
+
+
+.post h4 {
+  margin-top: 0;
+  color: #003566;
+
+  
+}
+
+
+
+/* Post date adjusment here */
+.post-meta {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 1%;
+}
+
+/* Here is a dynamic desgin that I've added for the mobile users. I borrowed some techniques from online */
+/* While we don't need the mobile design, but I still made it just for sure */
+
+
+@media (max-width: 768px) {
+  
+  .container {
+    flex-direction: column; /* Stack the sidebar onto the top */
+    
+  }
+
+  .sidebar {
+    
+    width: 100%; /* This is to set the width for the mobile (dynamically): full width on mobile */
+    
+    border-right: none;
+    border-bottom: 0.2% solid #a0bacc;
+    padding: 1.5%;
+ 
+  }
+
+  .main-content {
+    padding: 2%;
+    
+  }
+
+  
+  .sidebar ul {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+
+    
+  }
+
+  
+  .sidebar li {
+    margin: 0.5% 0;
+    flex: 1 1 30%; /* This allows the items to wrap */
+
+    
+  }
+
+
+  
+  .level-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+
+    
+  }
+
+
+  
+  .level-selector label {
+    
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+
+
+    
+  }
+
+
+
+
+
+
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
