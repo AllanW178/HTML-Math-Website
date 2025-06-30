@@ -1,34 +1,25 @@
+<!-- Main heading here -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
   <title>GEOMETRIX - Home</title>
-
-  
-  <!-- Link to shared stylesheet -->
   <link rel="stylesheet" href="MathWebsite.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
-
-<!-- Script to polish math interactions (placeholder for now) -->
-<script src="MathPolishment.js"></script>
-
 <body class="index">
-
   <div class="container">
-    <!-- Sidebar navigation section -->
     <aside class="sidebar">
       <div class="logo-container">
-        <!-- Logo + Title area -->
         <div class="logo"></div>
         <h1 class="title">LearnMATH</h1>
         <p class="subtitle">GEOMETRIX</p>
       </div>
 
-      <!-- Navigation links -->
+      
       <nav>
-        
+        <!-- Main navigations here -->
         <ul>
           <li><a href="index.html"><strong>HOME</strong><span>Main page of GEOMETRIX</span></a></li>
           <li><a href="about.html"><strong>ABOUT</strong><span>News and math content</span></a></li>
@@ -40,44 +31,45 @@
       
     </aside>
 
-    <!-- Main content area -->
+    <!-- Contents with information in the main page. -->
     <main class="main-content">
       
-      <h2 class="fancy-heading">Welcome</h2>
-      <p class="fade-in">You're on the GEOMETRIX home page.</p>
-      <p>Start learning geometry today with our interactive lessons and community support.<br><br><br></p>
-
-      <p class="content-text">A Puzzle: SUPER EASY<br><br><br><br>
-        What is the missing number?<br><br>
+      <h2 class="fancy-heading" data-aos="fade-up">Welcome</h2>
+      <p class="fade-in" data-aos="fade-in" data-aos-delay="200">You're on the GEOMETRIX home page.</p>
+      <p data-aos="zoom-in-up" data-aos-delay="400">Start learning geometry today with our interactive lessons and community support.<br><br><br></p>
+      <p class="content-text" data-aos="fade-in" data-aos-delay="600">
         
+        A Puzzle: SUPER EASY<br><br><br><br>
+        What is the missing number?<br><br>
         <em>? - 2 = 4</em><br><br>
         OK, the answer is 6, right? Because 6 - 2 = 4. Easy stuff.<br><br>
-        
         Well, in Algebra we don't use blank boxes, we use a letter (usually an x or y, but any letter is fine). So we write:<br><br>
-        
         <em>x - 2 = 4</em><br><br>
         It is really that simple. The letter (in this case an x) just means "we don't know this yet", and is often called the unknown or the variable.<br><br><br>
-        
         And when we solve it we write:<br><br><br>
-        
         <em>x = 6</em><br><br>
-        
         <strong>Easy right?</strong><br><br><br><br>
         <strong>Watch this video:</strong><br><br>
-        <iframe class="video-1" width="560" height="315" src="https://www.youtube.com/embed/vDqOoI-4Z6M?si=6EpXc1duu0-oMw5r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <!-- Video for the users/viewers for a deeper understanding on the math contents. -->
+        <iframe class="video-1" data-aos="fade-up" data-aos-delay="800" width="560" height="315" src="https://www.youtube.com/embed/vDqOoI-4Z6M?si=6EpXc1duu0-oMw5r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+      
       </p>
     </main>
     
   </div>
 
-</body>
+  <!-- Connecting Java scripts and its other libraries -->
+  <!-- I learned AOS from online. -->
   
+  <script src="MathPolishment.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  
+</body>  
 </html>
-
-
-
-
-
 
 
 
