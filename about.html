@@ -4,22 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GEOMETRIX - About</title>
+
+  <!-- Defining and linking CSS file and an extra library -->
   <link rel="stylesheet" href="MathWebsite.css" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  
 </head>
 
 <body class="about">
   <div class="container">
     <aside class="sidebar">
       <div class="logo-container">
+        
         <div class="logo"></div>
         <h1 class="title">LearnMATH</h1>
         <p class="subtitle">GEOMETRIX</p>
+        
       </div>
 
-      
       <nav>
+
+        
         <!-- Show and keep navigation bars  -->
         <ul>
           <li><a href="index.html"><strong>HOME</strong><span>Main page of GEOMETRIX</span></a></li>
@@ -27,26 +31,25 @@
           <li><a href="attend.html"><strong>ATTEND</strong><span>Getting started</span></a></li>
           <li><a href="community.html"><strong>COMMUNITY</strong><span>Discuss and post</span></a></li>
         </ul>
-        
       </nav>
       
     </aside>
 
 
+    
     <!-- Defining the main content page here -->
     <main class="main-content">
-      
       <h2 class="fancy-heading" data-aos="fade-up">About GEOMETRIX</h2>
       <p class="fade-in" data-aos="fade-in">GEOMETRIX brings new math content and structured levels to help all learners succeed.</p>
 
+      
       <h3 data-aos="fade-right">Latest News</h3>
       <p data-aos="fade-left">Stay updated with platform announcements and events. New content added every week!</p>
 
-      
       <h3 data-aos="fade-right">Choose Your Math Level</h3>
-
       <div class="level-selector" data-aos="zoom-in-up">
 
+        
         <!-- Defining every button first -->
         <input type="radio" id="beginner" name="math-level" checked>
         <label for="beginner">Beginner</label>
@@ -57,37 +60,71 @@
         <input type="radio" id="advanced" name="math-level">
         <label for="advanced">Advanced</label>
 
+
+
+        
         <!-- This is the interactive buttons for the user. -->
         <div class="level-descriptions">
+          
           <div class="description" data-level="beginner">Perfect for those new to geometry...</div>
           <div class="description" data-level="intermediate">For learners familiar with basics...</div>
           <div class="description" data-level="advanced">Challenging content including trigonometry...</div>
+          
         </div>
       </div>
     </main>
+    
   </div>
 
-
-  <!-- Java script insertion here for better page transitions -->
-  <script src="MathPolishment.js
-
-
-    
+  <!-- Script files, that includes AOS and JS for better user experience (e.g., transitions) -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 
 
+  <!--Calling the Java script and AOS library -->
+  <script>
+    AOS.init();
+  </script>
+  <script src="MathPolishment.js"></script>
 
 
-
-
-
-
-
-    
+  
+</body>
+</html>
 
 
 
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
