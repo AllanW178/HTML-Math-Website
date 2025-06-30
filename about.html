@@ -5,16 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GEOMETRIX - About</title>
   <link rel="stylesheet" href="MathWebsite.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
 </head>
 
-<script src="MathPolishment.js"></script>
-
 <body class="about">
-
-  
   <div class="container">
-    
-    <!-- Sidebar navigation -->
     <aside class="sidebar">
       <div class="logo-container">
         <div class="logo"></div>
@@ -22,36 +18,36 @@
         <p class="subtitle">GEOMETRIX</p>
       </div>
 
+      
       <nav>
-        
+        <!-- Show and keep navigation bars  -->
         <ul>
           <li><a href="index.html"><strong>HOME</strong><span>Main page of GEOMETRIX</span></a></li>
           <li><a href="about.html"><strong>ABOUT</strong><span>News and math content</span></a></li>
           <li><a href="attend.html"><strong>ATTEND</strong><span>Getting started</span></a></li>
           <li><a href="community.html"><strong>COMMUNITY</strong><span>Discuss and post</span></a></li>
-          
         </ul>
+        
       </nav>
       
     </aside>
 
-    <!-- Main about page content -->
+
+    <!-- Defining the main content page here -->
     <main class="main-content">
       
-      <h2 class="fancy-heading">About GEOMETRIX</h2>
-      <p class="fade-in">GEOMETRIX brings new math content and structured levels to help all learners succeed.</p>
+      <h2 class="fancy-heading" data-aos="fade-up">About GEOMETRIX</h2>
+      <p class="fade-in" data-aos="fade-in">GEOMETRIX brings new math content and structured levels to help all learners succeed.</p>
 
-      <!-- Announcements area -->
-      <h3>Latest News</h3>
-      <p>Stay updated with platform announcements and events. New content added every week!</p>
-
-      <!-- Level selection form -->
-      <h3>Choose Your Math Level</h3>
-
+      <h3 data-aos="fade-right">Latest News</h3>
+      <p data-aos="fade-left">Stay updated with platform announcements and events. New content added every week!</p>
 
       
-      <div class="level-selector">
-        <!-- Radio inputs to choose level -->
+      <h3 data-aos="fade-right">Choose Your Math Level</h3>
+
+      <div class="level-selector" data-aos="zoom-in-up">
+
+        <!-- Defining every button first -->
         <input type="radio" id="beginner" name="math-level" checked>
         <label for="beginner">Beginner</label>
 
@@ -61,39 +57,22 @@
         <input type="radio" id="advanced" name="math-level">
         <label for="advanced">Advanced</label>
 
-        
-        <!-- Level descriptions appear dynamically -->
-        
+        <!-- This is the interactive buttons for the user. -->
         <div class="level-descriptions">
-          
-          <div class="description" data-level="beginner">
-            Perfect for those new to geometry. Start with basic shapes, angles, and measurements.
-          </div>
-          
-          <div class="description" data-level="intermediate">
-            For learners familiar with basics. Covers theorems, proofs, and coordinate geometry.
-          </div>
-          
-          <div class="description" data-level="advanced">
-            Challenging content including trigonometry, 3D geometry, and complex proofs.
-          </div>
-          
+          <div class="description" data-level="beginner">Perfect for those new to geometry...</div>
+          <div class="description" data-level="intermediate">For learners familiar with basics...</div>
+          <div class="description" data-level="advanced">Challenging content including trigonometry...</div>
         </div>
-
-        
       </div>
     </main>
-    
   </div>
 
 
-
-  
-</body>
-</html>
+  <!-- Java script insertion here for better page transitions -->
+  <script src="MathPolishment.js
 
 
-
+    
 
 
 
@@ -104,16 +83,11 @@
 
 
 
+    
 
 
 
 
 
 
-
-
-
-
-
-
-
+    
