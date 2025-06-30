@@ -4,17 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GEOMETRIX - Community</title>
+  <!-- Import CSS and other library -->
   <link rel="stylesheet" href="MathWebsite.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
-<script src="MathPolishment.js"></script>
-
 <body class="community">
-
   <div class="container">
-
-    
-    <!-- Sidebar menu -->
     <aside class="sidebar">
       <div class="logo-container">
         <div class="logo"></div>
@@ -22,9 +18,10 @@
         <p class="subtitle">GEOMETRIX</p>
       </div>
 
+      
       <nav>
-        
         <ul>
+          <!-- Main navigation bar here, this is for a better user experience so the users are able to navigate through the websites easily -->
           <li><a href="index.html"><strong>HOME</strong><span>Main page of GEOMETRIX</span></a></li>
           <li><a href="about.html"><strong>ABOUT</strong><span>News and math content</span></a></li>
           <li><a href="attend.html"><strong>ATTEND</strong><span>Getting started</span></a></li>
@@ -32,60 +29,56 @@
         </ul>
         
       </nav>
+
       
     </aside>
 
-    
-    <!-- Forum-style content area -->
+    <!-- A heading to attract the users/viewers -->
     <main class="main-content">
-      <h2 class="fancy-heading">Community Hub</h2>
-      <p class="fade-in">Join the GEOMETRIX community of math learners and enthusiasts.</p>
+      <h2 class="fancy-heading" data-aos="fade-up">Community Hub</h2>
+      <p class="fade-in" data-aos="fade-in">Join the GEOMETRIX community of math learners and enthusiasts.</p>
 
-      
-      <!-- Community features: discussion + post -->
-      <div class="community-features">
-        
+      <div class="community-features" data-aos="zoom-in-up">
         <div class="feature">
           <h3>Discussion Forum</h3>
           <p>Share your ideas, ask questions, and collaborate with others on geometry topics.</p>
-          
         </div>
 
-        <div class="feature">
-          <!-- Form to post content -->
-          <h3>Share Your Knowledge</h3>
 
+        <!-- This is where the user can enter their thoughts about what they are currently learnings and etc. (UNDONE) -->
+        <div class="feature">
           
+          <h3>Share Your Knowledge</h3>
           <form class="post-form" action="#" method="post">
-            <textarea name="post-content" placeholder="Share your math problems, tutorials, or tips..." maxlength="500"></textarea>
+            <textarea name="post-content" placeholder="Share your math problems..." maxlength="500"></textarea>
+            <!-- A sumbit button for user's message -->
             <div class="form-actions">
+              <!-- The message box can only consists 500 characters -->
               <button type="submit" class="btn-primary">Submit Post</button>
               <div class="char-count">500 characters remaining</div>
               
             </div>
           </form>
-          
         </div>
       </div>
 
-      
-      <!-- Example posts displayed below -->
       <div class="posts-container">
-        <h3>Recent Posts</h3>
+        
+        <h3 data-aos="fade-up">Recent Posts</h3>
 
-        <div class="post">
+        <div class="post" data-aos="fade-left">
           <h4>Understanding Pythagorean Theorem</h4>
-          <p>I found this great visualization that helped me understand the Pythagorean theorem better. Check it out!</p>
-          <div class="post-meta">Posted by Alex on June 15, 2023</div>
+          <p>I found this really useful that it helped me understand...</p>
+          <div class="post-meta">Posted by Person A on May 21, 2025</div>
           
         </div>
 
-        <div class="post">
+        
+        <div class="post" data-aos="fade-right">
           
           <h4>Geometry in Nature</h4>
-          <p>Has anyone noticed how many geometric patterns appear in nature? From honeycombs to snowflakes...</p>
-          
-          <div class="post-meta">Posted by Sam on June 10, 2023</div>
+          <p>Has anyone noticed how many geometric patterns appear in nature?</p>
+          <div class="post-meta">Posted by Person B on June 10, 2025</div>
         </div>
         
       </div>
@@ -95,10 +88,17 @@
 
 
 
+  <!-- Java script and AOS library insertion, this is for a better user experience -->
+  <script src="MathPolishment.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+
 
   
 </body>
 </html>
+
 
 
 
