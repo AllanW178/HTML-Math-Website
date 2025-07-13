@@ -1,8 +1,9 @@
 
+
 document.addEventListener('DOMContentLoaded', function () {
   
   
-  // Fade in main content
+  // Fade in with the main content (animation)
 
   const mainContent = document.querySelector('.main-content');
 
@@ -14,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 100);
   }
 
-  // Character count logic
+  // Character count logic [not yet finished but it simulates the feedback chatbox]
   const textarea = document.querySelector('.post-form textarea');
 
   if (textarea) {
@@ -56,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  // Level label selection effect
+  // Level label selection effect to be more immersive
   const levelLabels = document.querySelectorAll('.level-selector label');
 
   if (levelLabels.length > 0) {
@@ -72,12 +73,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  // Add footer
+  // This is to add footer for GEOMETRIX website
   const footer = document.createElement('footer');
+  // Alignment for the footer
   footer.style.textAlign = 'center';
+  // Padding adjustments for the footer
   footer.style.padding = '20px';
+  // Colour (background) for the footer
   footer.style.color = '#666';
+  // Content info for the footer
   footer.innerHTML = `© ${new Date().getFullYear()} GEOMETRIX - LearnMATH`;
+  
   document.body.appendChild(footer);
 
 
