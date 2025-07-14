@@ -4,14 +4,14 @@
 ## Using a Class for the Body Tag
 
 
-
+===
 <body class="index">
-
+===
 
 - Why this didn’t work well:
----
+===
 <body>
----
+===
   
 This didn't let me apply specific styles to different pages.
 
