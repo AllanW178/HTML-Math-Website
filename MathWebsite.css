@@ -12,6 +12,35 @@ body {
   
 }
 
+
+/* Image adjustments here */
+.img-1 {
+  border: 0.5vw solid lightblue; /* Approximates a scalable border (responsive) */
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: inline-block;
+}
+
+.img-2 {
+  border: 0.5vw solid lightblue; /* Approximates a scalable border (responsive) */
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 40%;
+  margin-left: 5%;
+}
+
+.img-3 {
+  margin-left: 12%;
+  width: 80%;
+  border: 0.5vw solid lightblue;
+}
+
+
+.special-text {
+  display: block;
+}
+
+
 /* main subtitle for the main content */
 .main-title-1 {
   font-size: 200%;
@@ -22,6 +51,7 @@ body {
 /* main text for the main content */
 .content-text {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 /* video customization */
@@ -436,7 +466,6 @@ body.community .sidebar a[href="community.html"] {
 
   
 }
-
 
 
 
